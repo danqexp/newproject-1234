@@ -1,0 +1,74 @@
+﻿/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+
+body {
+    cursor: url('../../uploads/2024/04/123-1-e1714161708279.png') 30 30, auto; 
+}
+
+
+
+/* Стилизация трека скроллбара */
+::-webkit-scrollbar-track {
+    background: #040404;
+}
+
+
+/* Стилизация самого скроллбара (ползунка) */
+::-webkit-scrollbar-thumb {
+    background: #BCFE00 !important; /* Ярко-зеленый цвет ползунка, усиленный приоритет */
+    border-radius: 0px !important; /* Без закругления, усиленный приоритет */
+}
+
+/* Опционально: настройка ширины скроллбара */
+::-webkit-scrollbar {
+    width: 8px !important; /* Ширина скроллбара, усиленный приоритет */
+}
+
+.upload-form .elementor-field-type-upload input[type="file"]::file-selector-button {
+	display: none;
+}
+
+.upload-form .elementor-field-type-upload input[type="file"]{
+    color: #BCFE00;
+    font-size: 20px;
+    line-height: 26px !important;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.upload-form .elementor-field-type-upload input[type="file"]::before{
+    content: 'Attach CV';
+	background-image: url('../../uploads/2024/04/CV_icon.svg');
+	background-size: 48px 48px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 56px; /* Достаточно места, чтобы текст не перекрывал иконку */
+	padding-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    color: #BCFE00;
+    font-size: 20px;
+    line-height: 26px !important;
+    font-family: 'Poppins';
+    font-weight: 600;
+	letter-spacing: 0.32%;
+}
+
+*:focus {
+    outline: none;
+}
